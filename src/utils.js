@@ -21,7 +21,7 @@ function useLocalStorageState(
   })
 
   const prevKeyRef = React.useRef(key)
-
+  console.log('Pre Key Ref : ', prevKeyRef);
   React.useEffect(() => {
     const prevKey = prevKeyRef.current
     if (prevKey !== key) {
